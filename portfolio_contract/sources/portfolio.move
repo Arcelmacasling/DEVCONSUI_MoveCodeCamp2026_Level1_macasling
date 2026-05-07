@@ -1,4 +1,3 @@
-#[allow(lint(self_transfer))]
 module portfolio::portfolio {
     use sui::object::{Self, UID};
     use sui::transfer;
