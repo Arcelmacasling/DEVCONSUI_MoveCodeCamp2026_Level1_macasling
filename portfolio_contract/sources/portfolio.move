@@ -1,3 +1,4 @@
+#[allow(lint(self_transfer))]
 module portfolio::portfolio {
     use sui::object::{Self, UID};
     use sui::transfer;
@@ -5,7 +6,6 @@ module portfolio::portfolio {
     use sui::package;
     use sui::display;
     use std::string::{Self, String};
-    use std::vector;
 
     struct Portfolio has key, store {
         id: UID,
